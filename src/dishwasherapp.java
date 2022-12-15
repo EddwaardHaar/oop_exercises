@@ -12,15 +12,22 @@ public class dishwasherapp {
 
 class Dishwasher{
 
-    private boolean isOn = false;
+    private boolean isOn;
+    private int programme;
 
-    public void setProgramme(int answer) {
+    public void tunOnOff(boolean onOff){
 
-        System.out.println("Programme n." + answer + " is ready");
+        if (onOff == true){
+            this.isOn = true;
+        }else if(onOff == false){
+            this.isOn = false;
+        }
 
     }
 
-    public void tunOnOff(){
+    public void setProgramme(int answer) {
+        this.programme = answer;
+        System.out.println("Programme n." + answer + " is ready");
 
     }
 
