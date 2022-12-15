@@ -12,16 +12,11 @@ public class dishwasherapp {
 
 class Dishwasher{
 
-    private boolean isOn;
-    private int programme;
+    private boolean isOn = false;
 
-    public void setProgramme(int programme) {
+    public void setProgramme(int answer) {
 
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("You can chooose from 3 different programmes: (1,2,3)");
-        String answer = myObj.nextLine();
-        int choice = Integer.valueOf(answer);
-        System.out.println("Programme n." + choice + " is ready");
+        System.out.println("Programme n." + answer + " is ready");
 
     }
 
@@ -31,6 +26,7 @@ class Dishwasher{
 
     public void printData(){
 
+        System.out.println("You can chooose from 3 different programmes: (1,2,3)");
     }
 
 }
